@@ -11,7 +11,7 @@ function db_connect(){
 	 $connect = new DBConnect;	
 	// abre a conex�o com o banco de dados
 	if (DBConnect::database=="postgresql"){     
-			if( $result = pg_pconnect("host=".DBConnect::host." dbname=".DBConnect::database_name." user=".DBConnect::user." password=".DBConnect::passwd)){ 	       
+			if( $result = pg_connect("host=".DBConnect::host." dbname=".DBConnect::database_name." user=".DBConnect::user." password=".DBConnect::passwd)){ 	       
 					return $result;     
 			} else {
 					echo "<script>alert('Servidor n�o encontrado: ".DBConnect::host."');</script>";
@@ -19,7 +19,7 @@ function db_connect(){
 			}
 	}
 	if (DBConnect::database=="mysql"){     
-			if( $result = @mysql_pconnect(DBConnect::host, DBConnect::user, DBConnect::passwd) ){
+			if( $result = @mysql_connect(DBConnect::host, DBConnect::user, DBConnect::passwd) ){
 					if( $conect_db = @mysql_select_db(DBConnect::database_name,$result) ){
 				   		  return $result;
 					} else {
