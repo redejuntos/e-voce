@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<tables>
+
+<table>
+<nome>usuarios</nome>
+<order>nome_usuario</order>
+<primary_key>id_usuario</primary_key>
+<button_extends>yes</button_extends>
+<listfield_vetor>id_usuario,login,nome_usuario,id_nivel,email,data_cancelamento as ativado,data_cancelamento</listfield_vetor>
+<hidefield_vetor>id_usuario</hidefield_vetor>
+<titulo>Usuários</titulo>
+<where></where>
+</table>	
+
+
+
+<table>
+<nome>operacoes</nome>
+<order>operacao_interna</order>
+<primary_key>id_operacao</primary_key>
+<button_extends>no</button_extends>
+<listfield_vetor>id_operacao,id_transacao,operacao_interna,descricao_operacao,grupo,tabela</listfield_vetor>
+<hidefield_vetor>id_operacao</hidefield_vetor>
+<titulo>Operações do Sistema</titulo>
+<where></where>
+</table>
+
+
+<table>
+<nome>situacoes</nome>
+<order>nome_situacao</order>
+<primary_key>id_situacao</primary_key>
+<button_extends>yes</button_extends>
+<listfield_vetor>id_situacao,nome_situacao,descricao_situacao,fixo_sistema,data_alteracao,data_inclusao,data_cancelamento as ativado,data_cancelamento</listfield_vetor>
+<hidefield_vetor>id_situacao</hidefield_vetor>
+<titulo>Situações</titulo>
+<where></where>
+</table>
+
+
+
+
+
+
+<table>
+<nome>log_sys</nome>
+<order>data_log desc</order>
+<primary_key>id_log</primary_key>
+<button_extends>no</button_extends>
+<listfield_vetor>id_log,data_log,id_usuario,id_operacao,resumo,sql_text</listfield_vetor>
+<hidefield_vetor>id_log</hidefield_vetor>
+<titulo>Relatório de Logs por Usuario</titulo>
+<where></where>
+</table>
+
+	
+
+
+
+<table>
+<nome>niveis_acesso</nome>
+<order>nome_nivel</order>
+<primary_key>id_nivel</primary_key>
+<button_extends>yes</button_extends>
+<listfield_vetor>id_nivel,nome_nivel,descricao_nivel,data_alteracao,data_inclusao,data_cancelamento as ativado,data_cancelamento</listfield_vetor>
+<hidefield_vetor>id_nivel</hidefield_vetor>
+<titulo>Grupos de Acesso</titulo>
+<where></where>
+</table>
+
+
+
+<table>
+<nome>help</nome>
+<order>tipo_campo,tamanho</order>
+<primary_key>id_help</primary_key>
+<button_extends>yes</button_extends>
+<listfield_vetor>id_help,palavra_chave,tipo_campo,tamanho,descricao</listfield_vetor>
+<hidefield_vetor>id_help</hidefield_vetor>
+<titulo>Ajuda</titulo>
+<where></where>
+</table>
+
+
+<table>
+<nome>questionarios</nome>
+<order>nome_questionario,data_inclusao</order>
+<primary_key>id_questionario</primary_key>
+<button_extends>yes</button_extends>
+<listfield_vetor>id_questionario,nome_questionario,descricao,data_alteracao,data_inclusao,data_cancelamento as ativado,data_cancelamento</listfield_vetor>
+<hidefield_vetor>id_questionario</hidefield_vetor>
+<titulo>Questionários</titulo>
+<where></where>
+</table>
+
+
+
+
+
+<table>
+<nome>forms_componentes</nome>
+<order>nome_componente,data_inclusao</order>
+<primary_key>id_form_componente</primary_key>
+<button_extends>yes</button_extends>
+<listfield_vetor>id_form_componente,nome_componente,descricao,data_cancelamento as ativado,data_cancelamento</listfield_vetor>
+<hidefield_vetor>id_form_componente</hidefield_vetor>
+<titulo>Componentes p/ Forms</titulo>
+<where></where>
+</table>
+
+
+<table>
+<nome>perguntas</nome>
+<order>id_questionario,nro_pergunta</order>
+<primary_key>id_pergunta</primary_key>
+<button_extends>yes</button_extends>
+<listfield_vetor>id_pergunta,id_questionario,id_topico,nro_pergunta,texto_pergunta,comentario_flag,id_form_componente,data_cancelamento as ativado,data_cancelamento</listfield_vetor>
+<hidefield_vetor>id_pergunta</hidefield_vetor>
+<titulo>Perguntas</titulo>
+<where></where>
+</table>
+
+
+<table>
+<nome>opcoes</nome>
+<order>id_pergunta,ordem</order>
+<primary_key>id_opcao</primary_key>
+<button_extends>yes</button_extends>
+<listfield_vetor>id_opcao,id_pergunta,nro_opcao,texto_opcao,data_cancelamento as ativado,data_cancelamento</listfield_vetor>
+<hidefield_vetor>id_opcao</hidefield_vetor>
+<titulo>Opções</titulo>
+<where></where>
+</table>
+
+
+
+
+
+
+<table>
+<nome>desafios</nome>
+<order>id_desafio</order>
+<primary_key>id_desafio</primary_key>
+<button_extends>yes</button_extends>
+<listfield_vetor>id_desafio,nome_desafio,data_inicio,data_fim,data_cancelamento as ativado,data_cancelamento</listfield_vetor>
+<hidefield_vetor>id_desafio</hidefield_vetor>
+<titulo>Desafios</titulo>
+<where></where>
+</table>
+
+<table>
+<nome>topicos</nome>
+<order>nome_topico</order>
+<primary_key>id_topico</primary_key>
+<button_extends>yes</button_extends>
+<listfield_vetor>id_topico,nome_topico,nro_topico,data_inclusao,data_cancelamento as ativado,data_cancelamento</listfield_vetor>
+<hidefield_vetor>id_topico</hidefield_vetor>
+<titulo>Topicos</titulo>
+<where></where>
+</table>
+
+<table>
+<nome>votacao</nome>
+<order>data_inclusao</order>
+<primary_key>id_contribuicao</primary_key>
+<button_extends>yes</button_extends>
+<listfield_vetor>id_contribuicao,media_flag,youtube_link,caminho_arquivo,arquivo,id_desafio,id_contribuicao as votos,'' as media_votacao,nome_contribuicao,descricao,data_cancelamento as ativado,data_cancelamento,id_participante</listfield_vetor>
+<hidefield_vetor>id_contribuicao,media_flag,youtube_link,caminho_arquivo,arquivo</hidefield_vetor>
+<titulo>Votação</titulo>
+<where>id_fase = '3'</where>
+</table>
+
+
+
+<table>
+<nome>selecionar_votacao</nome>
+<order>data_inclusao</order>
+<primary_key>id_contribuicao</primary_key>
+<button_extends>no</button_extends>
+<listfield_vetor>id_contribuicao,media_flag,youtube_link,caminho_arquivo,arquivo,selecionado,id_desafio,id_contribuicao as votos,'' as media_votacao,nome_contribuicao,descricao,data_cancelamento as ativado,data_cancelamento,id_participante</listfield_vetor>
+<hidefield_vetor>id_contribuicao,media_flag,youtube_link,caminho_arquivo,arquivo</hidefield_vetor>
+<titulo>Selecionar Votação</titulo>
+<where>id_fase = '3'</where>
+</table>
+
+
+
+<table>
+<nome>execucao</nome>
+<order>data_inclusao desc</order>
+<primary_key>id_contribuicao</primary_key>
+<button_extends>yes</button_extends>
+<listfield_vetor>id_contribuicao,media_flag,youtube_link,caminho_arquivo,arquivo,id_desafio,'' as media_votacao,nome_contribuicao,descricao,data_cancelamento as ativado,data_cancelamento,id_participante</listfield_vetor>
+<hidefield_vetor>id_contribuicao,media_flag,youtube_link,caminho_arquivo,arquivo</hidefield_vetor>
+<titulo>Execução</titulo>
+<where>id_fase = '4'</where>
+</table>
+
+
+<table>
+<nome>contribuicoes</nome>
+<order>data_inclusao</order>
+<primary_key>id_contribuicao</primary_key>
+<button_extends>yes</button_extends>
+<listfield_vetor>id_contribuicao,id_participante,nome_contribuicao,id_participante,descricao,data_inclusao,data_cancelamento as ativado,data_cancelamento</listfield_vetor>
+<hidefield_vetor>id_contribuicao</hidefield_vetor>
+<titulo>Contribuições</titulo>
+<where>id_fase = '1'</where>
+</table>
+
+<table>
+<nome>inspiracoes</nome>
+<order>data_inclusao desc</order>
+<primary_key>id_contribuicao</primary_key>
+<button_extends>no</button_extends>
+<listfield_vetor>id_contribuicao,media_flag,caminho_arquivo,arquivo,data_inclusao,aprovado,media,titulo,descricao,id_participante,id_desafio,data_cancelamento as ativado,data_cancelamento</listfield_vetor>
+<hidefield_vetor>id_contribuicao,media_flag,caminho_arquivo,arquivo</hidefield_vetor>
+<titulo>Inspiracoes</titulo>
+<where></where>
+</table>
+
+
+<table>
+<nome>selecionar_inspiracoes</nome>
+<order>data_inclusao desc</order>
+<primary_key>id_contribuicao</primary_key>
+<button_extends>no</button_extends>
+<listfield_vetor>id_contribuicao,media_flag,youtube_link,caminho_arquivo,arquivo,selecionado as proposta,id_desafio,id_contribuicao as curtidas,'' as media_votacao,nome_contribuicao,descricao,id_participante</listfield_vetor>
+<hidefield_vetor>id_contribuicao,media_flag,youtube_link,caminho_arquivo,arquivo</hidefield_vetor>
+<titulo>Selecionar Inspiração</titulo>
+<where>id_fase = '1'</where>
+</table>
+
+
+
+<table>
+<nome>propostas</nome>
+<order>data_inclusao desc</order>
+<primary_key>id_contribuicao</primary_key>
+<button_extends>no</button_extends>
+<listfield_vetor>id_contribuicao,media_flag,caminho_arquivo,arquivo,data_inclusao,aprovado,media,titulo,descricao,id_desafio,id_participante,id_topico,data_cancelamento as ativado,data_cancelamento</listfield_vetor>
+<hidefield_vetor>id_contribuicao,media_flag,caminho_arquivo,arquivo</hidefield_vetor>
+<titulo>Propostas</titulo>
+<where></where>
+</table>
+
+
+<table>
+<nome>selecionar_propostas</nome>
+<order>data_inclusao desc</order>
+<primary_key>id_contribuicao</primary_key>
+<button_extends>no</button_extends>
+<listfield_vetor>id_contribuicao,media_flag,caminho_arquivo,arquivo,selecionado,id_contribuicao as curtidas,id_desafio,data_inclusao,media,titulo,descricao,id_participante</listfield_vetor>
+<hidefield_vetor>id_contribuicao,media_flag,caminho_arquivo,arquivo</hidefield_vetor>
+<titulo>Selecionar Propostas</titulo>
+<where></where>
+</table>
+
+
+
+
+<table>
+<nome>comentarios</nome>
+<order>data_inclusao</order>
+<primary_key>id_comentario</primary_key>
+<button_extends>yes</button_extends>
+<listfield_vetor>id_comentario,data_inclusao,aprovado,id_participante,texto_comentario,data_cancelamento as ativado,data_cancelamento</listfield_vetor>
+<hidefield_vetor>id_comentario</hidefield_vetor>
+<titulo>Comentários</titulo>
+<where></where>
+</table>
+
+<table>
+<nome>help</nome>
+<order>tipo_campo</order>
+<primary_key>id_help</primary_key>
+<button_extends>yes</button_extends>
+<listfield_vetor>id_help,palavra_chave,tipo_campo,tamanho,descricao</listfield_vetor>
+<hidefield_vetor>id_help</hidefield_vetor>
+<titulo>Help</titulo>
+<where></where>
+</table>
+
+<table>
+<nome>fases</nome>
+<order>ordem</order>
+<primary_key>id_fase</primary_key>
+<button_extends>no</button_extends>
+<listfield_vetor>id_fase,nome_fase,ordem,descricao,data_alteracao,data_inclusao</listfield_vetor>
+<hidefield_vetor>id_fase</hidefield_vetor>
+<titulo>Fases</titulo>
+<where></where>
+</table>
+
+
+<table>
+<nome>participantes</nome>
+<order>nome_participante</order>
+<primary_key>id_participante</primary_key>
+<button_extends>yes</button_extends>
+<listfield_vetor>id_participante,facebook_id,facebook_page,avatar,nome_participante,email,telefone,data_nascimento,data_inclusao,moderador,data_cancelamento as ativado,data_cancelamento</listfield_vetor>
+<hidefield_vetor>id_participante,facebook_id,facebook_page</hidefield_vetor>
+<titulo>Membros</titulo>
+<where></where>
+</table>
+
+
+<table>
+<nome>pontuacoes</nome>
+<order>id_pontuacao</order>
+<primary_key>id_pontuacao</primary_key>
+<button_extends>yes</button_extends>
+<listfield_vetor>id_pontuacao,propostas,inspiracoes,comentarios,curtidas,visualizacoes</listfield_vetor>
+<hidefield_vetor>id_pontuacao</hidefield_vetor>
+<titulo>Pontuação</titulo>
+<where></where>
+</table>
+
+
+
+</tables>
+	
+	
+	

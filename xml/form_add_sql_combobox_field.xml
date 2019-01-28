@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--  Adiciona sql no combobox do formulario padrao de inclusao e alteracao	 -->	  
+<form>  
+	  <table> 
+		  <nome>agendamentos</nome>	
+		   <id_atendente>id_classificacao_atendimento=2</id_atendente>
+	  </table>		  
+	  <!--
+	  <table> 
+		  <nome>agendamentos</nome>	
+		   <id_atendente>id_classificacao_atendimento=2</id_atendente>
+	  </table>	-->	  
+</form>
+  
+

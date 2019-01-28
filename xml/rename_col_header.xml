@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<header>
+  <field>
+    <old>data_cancelamento</old>
+    <new>cancelado</new>
+  </field>
+  <field>
+    <old>id_nivel</old>
+    <new>Nível de Acesso</new>
+  </field>
+  <field>
+    <old>nome_nivel</old>
+    <new>Grupo de Acesso</new>
+  </field>
+  <field>
+    <old>descricao_nivel</old>
+    <new>Descrição</new>
+  </field>
+  <field>
+    <old>sql_text</old>
+    <new>sql</new>
+  </field>
+  <field>
+    <old>data_log</old>
+    <new>Data / Hora</new>
+  </field>
+  <field>
+    <old>nome_usuario</old>
+    <new>Nome</new>
+  </field>
+  <field>
+    <old>id_usuario</old>
+    <new>login</new>
+  </field>
+  <field>
+    <old>data_alteracao</old>
+    <new>Data Alteração</new>
+  </field>
+  <field>
+    <old>descricao</old>
+    <new>Descrição</new>
+  </field>
+  <field>
+    <old>descricao_situacao</old>
+    <new>Descrição</new>
+  </field>
+  <field>
+    <old>cep</old>
+    <new>CEP</new>
+  </field>
+  <field>
+    <old>cpf</old>
+    <new>CPF</new>
+  </field>
+  <field>
+    <old>cnpj</old>
+    <new>CNPJ</new>
+  </field>
+  <field>
+    <old>email</old>
+    <new>E-mail</new>
+  </field>
+  <field>
+    <old>id_situacao</old>
+    <new>Situação</new>
+  </field>
+  <field>
+    <old>cpf_cnpj</old>
+    <new>CPF / CNPJ</new>
+  </field>
+  <field>
+    <old>cnpj_cpf</old>
+    <new>CNPJ / CPF</new>
+  </field>
+  <field>
+    <old>nome</old>
+    <new>Nome</new>
+  </field>
+  <field>
+    <old>nome_resp_tecnico</old>
+    <new>Responsável Técnico</new>
+  </field>
+  <field>
+    <old>cpf_cnpj_proprietario</old>
+    <new>CNPJ / CPF</new>
+  </field>
+  <field>
+    <old>nro_ficha</old>
+    <new>Ficha Imóvel</new>
+  </field>
+  <field>
+    <old>cod_cartografico_imovel</old>
+    <new>Cód. Cartográfico</new>
+  </field>
+  <field>
+    <old>data_reenvio</old>
+    <new>último reenvio</new>
+  </field>
+  <field>
+    <old>aberto</old>
+    <new>Em aberto</new>
+  </field>
+  <field>
+    <old>dt_vencimento</old>
+    <new>Vencimento</new>
+  </field>
+  <field>
+    <old>dt_emissao</old>
+    <new>Emissão</new>
+  </field>
+  <field>
+    <old>data_pagamento</old>
+    <new>Data Pagamento</new>
+  </field>
+  <field>
+    <old>nro_documento</old>
+    <new>nºdocumento</new>
+  </field>
+  <field>
+    <old>id_solicitacao</old>
+    <new>nº</new>
+  </field>
+  <field>
+    <old>id_cobranca</old>
+    <new>nºdocumento</new>
+  </field>
+  <field>
+    <old>dt_pagamento</old>
+    <new>Data de Pagamento</new>
+  </field>
+  <field>
+    <old>dt_credito</old>
+    <new>data de crédito</new>
+  </field>
+  <field>
+    <old>nome_checklist</old>
+    <new>Nome do Checklist</new>
+  </field>
+  <field>
+    <old>data_publicacao</old>
+    <new>Publicado em:</new>
+  </field>
+  <field>
+    <old>nome_maturidade</old>
+    <new>Nível Maturidade</new>
+  </field>
+  <field>
+    <old>nome_questionario</old>
+    <new>Nome Questionário</new>
+  </field>
+  <field>
+    <old>texto_pergunta</old>
+    <new>Pergunta</new>
+  </field>
+  <field>
+    <old>nro_pergunta</old>
+    <new>nº</new>
+  </field>
+  <field>
+    <old>id_questionario</old>
+    <new>Questionário</new>
+  </field>
+  <field>
+    <old>id_form_componente</old>
+    <new>Tipo Componente</new>
+  </field>
+  <field>
+    <old>comentario_flag</old>
+    <new>Possui Comentário?</new>
+  </field>
+  <field>
+    <old>nome_classificacao</old>
+    <new>Classificação Atendimento</new>
+  </field>
+  <field>
+    <old>id_classificacao_atendimento</old>
+    <new>Classificação Atendimento</new>
+  </field>
+  <field>
+    <old>nome_atendente</old>
+    <new>Nome Atendente</new>
+  </field>
+  <field>
+    <old>nome_situacao</old>
+    <new>Nome Situação</new>
+  </field>
+  <field>
+    <old>id_nivel_maturidade</old>
+    <new>Nível Maturidade</new>
+  </field>
+  <field>
+    <old>obrigatorio_flag</old>
+    <new>Preenchimento Obrigatório?</new>
+  </field>
+  <field>
+    <old>id_topico</old>
+    <new>Tópico</new>
+  </field>
+  <field>
+    <old>id_pergunta</old>
+    <new>Pergunta</new>
+  </field>
+  <field>
+    <old>complemento_flag</old>
+    <new>Complemento?</new>
+  </field>
+  <field>
+    <old>break_line_before_flag</old>
+    <new>Quebra de Linha</new>
+  </field>
+  <field>
+    <old>id_empresa</old>
+    <new>Empresa</new>
+  </field>
+
+  <field>
+    <old>data_agenda</old>
+    <new>Data</new>
+  </field>
+  <field>
+    <old>id_nivel_maturidade</old>
+    <new>Pretendido</new>
+  </field>
+  <field>
+    <old>cnpj_empresa</old>
+    <new>CNPJ</new>
+  </field>
+  <field>
+    <old>horario_inicial</old>
+    <new>Início</new>
+  </field>
+  <field>
+    <old>id_atendente</old>
+    <new>Atendente</new>
+  </field>
+  <field>
+    <old>horario_final</old>
+    <new>Fim</new>
+  </field>
+  <field>
+    <old>nome_beneficio</old>
+    <new>Benefício</new>
+  </field>
+  <field>
+    <old>aux</old>
+    <new>Avaliado</new>
+  </field>
+  <field>
+    <old>fixo_sistema</old>
+    <new>Fixo no Sistema</new>
+  </field>
+  <field>
+    <old>qtde_dias_inicio_disponibilizacao</old>
+    <new>Qtde dias início</new>
+  </field>
+  <field>
+    <old>qtde_dias_disponibilizacao</old>
+    <new>Qtde dias disponibilização</new>
+  </field>
+  <field>
+    <old>data_final_agendamento</old>
+    <new>Data Final Agendamento</new>
+  </field>
+  <field>
+    <old>data_inicial_agendamento</old>
+    <new>Data Inicial Agendamento</new>
+  </field>
+  <field>
+    <old>nome_entidade</old>
+    <new>Nome Entidade</new>
+  </field>
+  <field>
+    <old>id_entidade</old>
+    <new>Nome Entidade</new>
+  </field>
+  <field>
+    <old>carga_horaria</old>
+    <new>Carga Horária</new>
+  </field>
+  <field>
+    <old>nome_treinamento</old>
+    <new>Nome Treinamento</new>
+  </field>
+  <field>
+    <old>ementa</old>
+    <new>Ementa</new>
+  </field>
+  <field>
+    <old>id_treinamento</old>
+    <new>Nome Treinamento</new>
+  </field>
+  <field>
+    <old>nome_turma</old>
+    <new>Nome Turma</new>
+  </field>
+  <field>
+    <old>id_turma_treinamento</old>
+    <new>Nome Turma</new>
+  </field>
+  <field>
+    <old>nome_participante</old>
+    <new>Nome Participante</new>
+  </field>
+  <field>
+    <old>data_treinamento</old>
+    <new>Data Treinamento</new>
+  </field>
+  <field>
+    <old>certificado</old>
+    <new>Certificado</new>
+  </field>
+  <field>
+    <old>email_contato</old>
+    <new>E-mail Contato</new>
+  </field>
+  <field>
+    <old>assunto</old>
+    <new>Assunto</new>
+  </field>
+  <field>
+    <old>data_nascimento</old>
+    <new>Data Nascimento</new>
+  </field>
+  <field>
+    <old>id_desafio</old>
+    <new>Desafio</new>
+  </field>
+  <field>
+    <old>nro_topico</old>
+    <new>nº</new>
+  </field>
+  <field>
+    <old>nome_topico</old>
+    <new>Nome Tópico</new>
+  </field>
+  <field>
+    <old>id_participante</old>
+    <new>Membro</new>
+  </field>
+  <field>
+    <old>nome_desafio</old>
+    <new>Nome Desafio</new>
+  </field>
+  <field>
+    <old>data_inicio</old>
+    <new>Data de Início</new>
+  </field>
+  <field>
+    <old>data_fim</old>
+    <new>Data Final</new>
+  </field>
+  <field>
+    <old>id_participante</old>
+    <new>Membro</new>
+  </field>
+  <field>
+    <old>tabela</old>
+    <new>Menu</new>
+  </field>
+  
+</header>

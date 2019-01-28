@@ -1,0 +1,37 @@
+
+#menu ul{
+	margin:0;
+	padding:0;
+}
+
+#menu ul li{
+	width:auto;
+	height:25px;
+	float:left;
+	color:#191919;
+	text-align:center;
+	overflow:hidden;
+}
+
+a{
+	color:#FFF;
+	text-decoration:none;
+}
+
+#menu ul li p{
+	padding:0px 5px;
+}
+
+	.subtext{
+		padding-top:15px;
+	}
+
+/*Menu Color Classes*/
+.green{background:#77bb41 url('../images/green-item-bg.jpg') top right no-repeat;}
+.yellow{background:#FBC700 url('../images/yellow-item-bg.jpg') top right no-repeat;}
+.pink{background:#d300b9 url('../images/pink-item-bg.jpg') top right no-repeat;}
+.purple{background:#5122B4 url('../images/purple-item-bg.jpg') top right no-repeat;}
+.blue{background:#02bef9 url('../images/blue-item-bg.jpg') top right no-repeat;}
+.redlight{background:#ff3a08 url('../images/redlight-item-bg.jpg') top right no-repeat;} 
+.brown{background:#ac600f url('../images/brown-item-bg.jpg') top right no-repeat;} 
+

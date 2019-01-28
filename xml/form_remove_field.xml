@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--  Remove campos do formulario padrao na inclusao e alteracao -->	 
+<form>  
+	  <table> 
+		  <nome>participantes</nome>	
+		   <field>senha</field>
+		   <field>login</field>
+		   <field>email</field>
+	  </table>	
+
+	  <table> 
+		  <nome>desafios</nome>	
+		   <field>media_flag</field>
+	  </table>	
+
+	  <table> 
+		  <nome>topicos</nome>	
+		   <field>media_flag</field>
+	  </table>	
+
+
+
+  <!--
+	  <table> 
+		  <nome>nome_da_tabela</nome>	
+		   <field>campo_x</field>
+		    <field>campo_y</field>
+	  </table>	
+	  -->
+</form>
+  
+

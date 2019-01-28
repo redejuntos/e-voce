@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<menu>
+  <item>
+    <nome>Administrador</nome>
+    <subitem>
+      <titulo>Desafios</titulo>
+      <permission>desafios</permission>
+      <onclick>parent.grid('desafios',1000,460,'');</onclick>
+    </subitem>
+    <subitem>
+      <titulo>Tópicos</titulo>
+      <permission>topicos</permission>
+      <onclick>parent.grid('topicos',700,460,'');</onclick>
+    </subitem>
+    <subitem>
+      <titulo>Selecionar Propostas</titulo>
+      <permission>selecionar_propostas</permission>
+      <onclick>parent.grid('selecionar_propostas',1100,460,'');</onclick>
+    </subitem>
+    <subitem>
+      <titulo>Votação</titulo>
+      <permission>votacao</permission>
+      <onclick>parent.grid('votacao',1200,460,'');</onclick>
+    </subitem>
+    <subitem>
+      <titulo>Selecionar Votacao</titulo>
+      <permission>selecionar_votacao</permission>
+      <onclick>parent.grid('selecionar_votacao',1300,460,'');</onclick>
+    </subitem>
+    <subitem>
+      <titulo>Execução</titulo>
+      <permission>execucao</permission>
+      <onclick>parent.grid('execucao',1100,460,'');</onclick>
+    </subitem>
+  </item>
+  <item>
+    <nome>Comunidade</nome>
+    <subitem>
+      <titulo>Membros</titulo>
+      <permission>participantes</permission>
+      <onclick>parent.grid('participantes',900,460,'');</onclick>
+    </subitem>
+    <subitem>
+      <titulo>Inspirações</titulo>
+      <permission>inspiracoes</permission>
+      <onclick>parent.grid('inspiracoes',1200,460,'');</onclick>
+    </subitem>
+    <subitem>
+      <titulo>Selecionar Inspirações</titulo>
+      <permission>selecionar_inspiracoes</permission>
+      <onclick>parent.grid('selecionar_inspiracoes',1100,460,'');</onclick>
+    </subitem>
+    <subitem>
+      <titulo>Propostas</titulo>
+      <permission>propostas</permission>
+      <onclick>parent.grid('propostas',1200,460,'');</onclick>
+    </subitem>
+    <subitem>
+      <titulo>Comentários</titulo>
+      <permission>comentarios</permission>
+      <onclick>parent.grid('comentarios',1100,460,'');</onclick>
+    </subitem>
+  </item>
+  
+  <item>
+    <nome>Apoio</nome>
+    <subitem>
+      <titulo>Fases</titulo>
+      <permission>fases</permission>
+      <onclick>parent.grid('fases',900,360,'');</onclick>
+    </subitem>
+    <subitem>
+      <titulo>Pontuação</titulo>
+      <permission>pontuacoes</permission>
+      <onclick>parent.grid('pontuacoes',570,260,'');</onclick>
+    </subitem>
+  </item>
+  
+  <item>
+    <nome>Relatórios</nome>
+    <subitem>
+      <titulo>Gráficos</titulo>
+      <permission>relatorios</permission>
+      <onclick>parent.openAeroWindow('relatorios',80,'center',650,200,'','./php/telas.php?go_to_page=relatorios');</onclick>
+    </subitem>
+    <subitem>
+      <titulo>Acessos</titulo>
+      <permission>relatorios</permission>
+      <onclick>parent.openAeroWindow('acessos',80,'center',1000,600,'','./php/telas.php?go_to_page=acessos');</onclick>
+    </subitem>
+  </item>
+  
+  <item>
+    <nome>Sistema</nome>
+    <subitem>
+      <titulo>Controle de Usuários</titulo>
+      <permission>usuarios</permission>
+      <onclick>parent.grid('usuarios',800,460,'');</onclick>
+    </subitem>
+    <subitem>
+      <titulo>Grupos de Acesso</titulo>
+      <permission>niveis_acesso</permission>
+      <onclick>parent.grid('niveis_acesso',900,460,'');</onclick>
+    </subitem>
+    <subitem>
+      <titulo>Operacoes</titulo>
+      <permission>operacoes</permission>
+      <onclick>parent.grid('operacoes',900,460,'');</onclick>
+    </subitem>
+    <subitem>
+      <titulo>Logs</titulo>
+      <permission>log_sys</permission>
+      <onclick>parent.openAeroWindow('logs',80,'center',900,460,'','./php/listar.php?table=log_sys');</onclick>
+    </subitem>
+    <subitem>
+      <titulo>Alterar Senha</titulo>
+      <permission></permission>
+      <onclick>parent.openAeroWindow('alterar_senha',80,'center',450,200,'','./php/telas.php?go_to_page=alterar_senha');</onclick>
+    </subitem>
+    <!--  <subitem>
+      <titulo>Help</titulo>
+      <permission></permission>
+      <onclick>parent.grid('help',1100,460,'');</onclick>
+    </subitem>  -->
+  </item>
+</menu>

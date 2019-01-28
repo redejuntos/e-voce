@@ -1,0 +1,55 @@
+ {
+	FONT-FAMILY: monospace
+}
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px;  PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H1 {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; BACKGROUND: #eaeaf4; PADDING-BOTTOM: 20px; MARGIN: 0px; PADDING-TOP: 20px; BORDER-BOTTOM: #999 1px solid
+}
+FIELDSET {
+	CLEAR: both; BORDER-RIGHT: #999 1px solid; PADDING-RIGHT: 20px; BORDER-TOP: #999 1px solid; MARGIN-TOP: 20px; PADDING-LEFT: 20px; BACKGROUND: url(/imgs/back.png) #fafafa; FLOAT: left; PADDING-BOTTOM: 20px; BORDER-LEFT: #999 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #999 1px solid
+}
+LABEL {
+	CLEAR: both; DISPLAY: block
+}
+LEGEND {
+	BORDER-RIGHT: #999 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #999 1px solid; PADDING-LEFT: 2px; FONT-WEIGHT: bold; BACKGROUND: #eef; PADDING-BOTTOM: 2px; MARGIN: 0px 0px 20px; BORDER-LEFT: #999 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #999 1px solid
+}
+UNKNOWN {
+	MARGIN-TOP: 20px
+}
+SELECT {
+	BORDER-RIGHT: #999 1px solid; BORDER-TOP: #999 1px solid; MARGIN: 4px; BORDER-LEFT: #999 1px solid; BORDER-BOTTOM: #999 1px solid
+}
+TEXTAREA {
+	BORDER-RIGHT: #999 1px solid; BORDER-TOP: #999 1px solid; MARGIN: 4px; BORDER-LEFT: #999 1px solid; BORDER-BOTTOM: #999 1px solid
+}
+INPUT {
+	BORDER-RIGHT: #999 1px solid; BORDER-TOP: #999 1px solid; MARGIN: 4px; BORDER-LEFT: #999 1px solid; BORDER-BOTTOM: #999 1px solid
+}
+SELECT:unknown {
+	BACKGROUND: #eee
+}
+SELECT:hover {
+	BACKGROUND: #eee
+}
+TEXTAREA:unknown {
+	BACKGROUND: #eee
+}
+TEXTAREA:hover {
+	BACKGROUND: #eee
+}
+INPUT:hover {
+	BACKGROUND: #eee
+}
+INPUT:unknown {
+	BACKGROUND: #eee
+}
+
+
+
+
+.tolltip_css{
+	BORDER-RIGHT: #900 3px solid; BORDER-TOP: #900 3px solid; BACKGROUND: #fee; BORDER-LEFT: #900 3px solid; WIDTH: 300px; BORDER-BOTTOM: #900 3px solid
+}

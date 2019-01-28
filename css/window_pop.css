@@ -1,0 +1,39 @@
+BODY {
+	BACKGROUND: #fff; HEIGHT: 100%
+}
+#window {
+	DISPLAY: none; LEFT: 200px; OVERFLOW: hidden; WIDTH: 550px; POSITION: absolute; TOP: 100px; HEIGHT: 290px
+}
+#windowTop {
+	BACKGROUND-POSITION: right top; BACKGROUND-IMAGE: url(../images/window_top_end.png); OVERFLOW: hidden; CURSOR: move; BACKGROUND-REPEAT: no-repeat; POSITION: relative; HEIGHT: 30px
+}
+#windowTopContent {
+	BACKGROUND-POSITION: left top; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND-IMAGE: url(../images/window_top_start.png); OVERFLOW: hidden; COLOR: #03618D; TEXT-INDENT: 10px; LINE-HEIGHT: 30px; MARGIN-RIGHT: 13px; BACKGROUND-REPEAT: no-repeat; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: 30px
+}
+#windowMin {
+	RIGHT: 25px; CURSOR: pointer; POSITION: absolute; TOP: 10px
+}
+#windowMax {
+	DISPLAY: none; RIGHT: 25px; CURSOR: pointer; POSITION: absolute; TOP: 10px
+}
+#windowClose {
+	RIGHT: 10px; CURSOR: pointer; POSITION: absolute; TOP: 10px
+}
+#windowBottom {
+	BACKGROUND-POSITION: right bottom; BACKGROUND-IMAGE: url(../images/window_bottom_end.png); BACKGROUND-REPEAT: no-repeat; POSITION: relative; HEIGHT: 270px
+}
+#windowBottomContent {
+	BACKGROUND-POSITION: left bottom; BACKGROUND-IMAGE: url(../images/window_bottom_start.png); MARGIN-RIGHT: 13px; BACKGROUND-REPEAT: no-repeat; POSITION: relative; HEIGHT: 270px
+}
+#windowResize {
+	RIGHT: 3px; CURSOR: se-resize; BOTTOM: 5px; POSITION: absolute
+}
+#windowContent {
+	BORDER-RIGHT: #03618D 1px solid; BORDER-TOP: #03618D 1px solid; FONT-SIZE: 11px; LEFT: 10px; OVERFLOW: auto; BORDER-LEFT: #03618D 1px solid; WIDTH: 525px; MARGIN-RIGHT: 10px; BORDER-BOTTOM: #03618D 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; POSITION: absolute; TOP: 30px; HEIGHT: 245px; BACKGROUND-COLOR: #fff
+}
+#windowContent * {
+	MARGIN: 10px
+}
+.transferer2 {
+	BORDER-RIGHT: #0488AE 1px solid; BORDER-TOP: #0488AE 1px solid; FILTER: alpha(opacity=30); BORDER-LEFT: #0488AE 1px solid; BORDER-BOTTOM: #0488AE 1px solid; BACKGROUND-COLOR: #56AEEF; -moz-opacity: 0.3; opacity: 0.3
+}

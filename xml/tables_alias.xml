@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<header>
+  <table_alias>
+    <table>propostas</table>
+    <alias>selecionar_propostas</alias>
+  </table_alias>
+  <table_alias>
+    <table>contribuicoes</table>
+    <alias>votacao</alias>
+  </table_alias>
+  <table_alias>
+    <table>contribuicoes</table>
+    <alias>selecionar_votacao</alias>
+  </table_alias>
+  <table_alias>
+    <table>contribuicoes</table>
+    <alias>execucao</alias>
+  </table_alias>
+  <table_alias>
+    <table>contribuicoes</table>
+    <alias>selecionar_inspiracoes</alias>
+  </table_alias>
+</header>

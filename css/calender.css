@@ -1,0 +1,60 @@
+body  {
+	font-family: verdana,arial;
+	background-color:#003366;
+}
+a {
+	font-size : 10px;
+    text-decoration: none;
+}
+.rightday   {
+	color: White;
+	background-color: #339900;
+	font-size : 12px;
+	cursor: pointer;
+	cursor:hand;
+}
+.rightmonth {
+	color: black;
+	background-color: Beige;
+	font-size : 12px;
+	cursor: pointer;
+	cursor:hand;
+	border : 1px ridge White;
+}
+.weekDays {
+	color: white;
+	font-size : 12px;
+	background-color: #003366;
+}
+.wrongmonth {
+	font-size : 12px;
+	color: gray;
+	background-color: Silver;
+	cursor: pointer;
+	cursor:hand;
+}
+
+div {
+	font-size : 10px;
+	cursor: pointer;
+	cursor: hand;
+	background-color :#F2F2F2;
+}
+
+FORM SELECT.selSelect {
+		font-family: verdana,arial;
+		font-size : 10px;
+}
+
+
+.scrollMenu {
+	font-size : 12px;
+	color: black;
+	background-color: #003366;
+	cursor: pointer;
+	cursor:hand;
+	border : 1px double White;
+}
+
+
+

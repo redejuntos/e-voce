@@ -1,0 +1,84 @@
+/**
+ * Nome do projeto: APO – Aprovação de Plantas Online
+ * Nome do arquivo: estilo.css
+ * Data de criação: 29/11/2010
+ * Descrição código fonte: Folha de estilos para a formatação do sistema.
+ * @copyright Informatica de Municipios Associados S/A
+ * @autor: Thiago Cunha <thiago.cunha@ima.sp.gov.br>
+ * Caso de uso relacionado: 
+
+ * Data de atualização:
+ * @autor:
+ * Descrição da atualização:
+ *
+*/
+
+
+/*** DEFINIÇÃO GERAL *************************************************/
+* {
+	text-decoration:none;
+	margin:0;
+	padding:0;
+	vertical-align:middle;
+	border:0px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+	outline:0;
+}
+
+body
+{
+	margin:0; 
+	background-color:#FFFFFF;
+	text-align:center; /*centralizada conteúdo*/
+}
+
+p { font-size: 11px; padding-top:5px }
+p a{
+	color:#006699;
+	text-decoration:underline;
+	vertical-align:baseline;
+}
+
+.link_acao {
+	font-weight:bold;
+	/*color:#006699;*/
+	text-decoration:underline;
+	vertical-align:baseline;
+}
+.obriga{color:#ff0000;vertical-align:top}
+.negado{color:#999999;vertical-align:top}
+
+
+/* cores da fonte ******************************/
+.red{color:#ff0000;}
+
+/*-- tons de verde --*/
+.lime-green{color:#32CD32}
+.spring-green{color:#32CD32}
+.medium-forest-green{color:#6B8E23}
+.forest-green{color:#238E23}
+.medium-sea-green{color:#3CB371}
+.dark-green {color:#006400}
+
+
+/* cores de fundo *****************************/
+.bg-red{background-color:#ff0000;}
+.bg-lime-green{background-color:#32CD32;}
+.bg-medium-sea-green{background-color:#3CB371;}
+.bg-spring-green{background-color:#32CD32;}
+
+
+/* tamanhos */
+.t10{font-size:10px}
+.t11{font-size:11px}
+.t12{font-size:12px}
+.t13{font-size:13px}
+.t14{font-size:14px}
+.t15{font-size:15px}
+.t16{font-size:16px}
+
+.negrito { font-weight:bold }
+.sublinhado { text-decoration:underline;vertical-align:baseline }
+
