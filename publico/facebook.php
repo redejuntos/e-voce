@@ -1,20 +1,20 @@
 <?php
  
 //Prefeitura Municipal de Campinas
-//App ID:	190436047799972
-//App Secret:	87770bee05c00c581b532e6f1f242eae(redefinir)
+//App ID:	
+//App Secret:	
 //https://campinasevoce.campinas.sp.gov.br
 
 
-// Verifica o tipo de requisição e se tem a variável 'code' na url
+// Verifica o tipo de requisi??o e se tem a vari?vel 'code' na url
 if($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['code'])){
   // Informe o id da app
-  $appId = '190436047799972';
+  $appId = '';
   // Senha da app
-  $appSecret = '87770bee05c00c581b532e6f1f242eae';
+  $appSecret = '';
   // Url informada no campo "Site URL"
   $redirectUri = urlencode(InfoSystem::url_site);
-  // Obtém o código da query string
+  // Obt?m o c?digo da query string
   $code = $_GET['code'];
  
   // Monta a url para obter o token de acesso
@@ -34,22 +34,22 @@ if($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['code'])){
       $graph_url = "https://graph.facebook.com/me?access_token="
       . $params['access_token'];
  
-      // Obtém dados através do token de acesso
+      // Obt?m dados atrav?s do token de acesso
       $user = json_decode(file_get_contents($graph_url));
  
-      // Se obteve os dados necessários
+      // Se obteve os dados necess?rios
       if(isset($user->email) && $user->email){
  
         /*
-        * Autenticação feita com sucesso. 
-        * Loga usuário na sessão. Substitua as linhas abaixo pelo seu código de registro de usuários logados
+        * Autentica??o feita com sucesso. 
+        * Loga usu?rio na sess?o. Substitua as linhas abaixo pelo seu c?digo de registro de usu?rios logados
         */
 		
 		$sql_facebook = "SELECT id_participante, nome_participante,facebook_id, avatar	FROM participantes WHERE email = '". $user->email."'";
 		
-		if (numrows($sql_facebook)>0){ // já cadastrado no sistema		
+		if (numrows($sql_facebook)>0){ // j? cadastrado no sistema		
 			$rs_fb = get_record($sql_facebook);			
-			if ($rs_fb["facebook_id"]){  // já logou com facebook			
+			if ($rs_fb["facebook_id"]){  // j? logou com facebook			
 				  if (trim($rs_fb["avatar"])){
 					   $image_avatar = $rs_fb["avatar"];
 				  }else{
@@ -121,13 +121,13 @@ if($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['code'])){
 				//////////////////////////////////////////////////////////////////
 				$Subject = "Cadastro | ".InfoSystem::nome_sistema;		
 				$Html = '<html><body bgcolor="#ffffff">'.email_header();	
-				$Html .= 'Olá '.$user->name.', <br><br>';
-				$Html .= "Bem-vindo ao ".InfoSystem::nome_sistema.", a plataforma de Inovação Aberta da Prefeitura Municipal de Campinas.".'<br><br>';				
-				$Html .= 'Seu Login de Usuário é: '.$user->email.'<br>';
+				$Html .= 'Ol? '.$user->name.', <br><br>';
+				$Html .= "Bem-vindo ao ".InfoSystem::nome_sistema.", a plataforma de Inova??o Aberta da Prefeitura Municipal de Campinas.".'<br><br>';				
+				$Html .= 'Seu Login de Usu?rio ?: '.$user->email.'<br>';
 				$Html .= 'Sua Senha de acesso pode ser criada ou alterada no link "Alterar Senha" na janela "Meu Cadastro"<br>';
 				$Html .= InfoSystem::nome_sistema.': <a href="'.InfoSystem::url_site.'">'.InfoSystem::url_site.'</a><br><br>';			
-				$Html .= 'Agora você já pode contribuir com inspirações, propostas e votar nas melhores soluções para a o serviço público de saúde em Campinas. <br>';
-				$Html .= '<br>Caso esqueça sua senha, você poderá gerar uma nova senha pelo botão "Lembrar Senha" na nossa página inicial de login.<br>';
+				$Html .= 'Agora voc? j? pode contribuir com inspira??es, propostas e votar nas melhores solu??es para a o servi?o p?blico de sa?de em Campinas. <br>';
+				$Html .= '<br>Caso esque?a sua senha, voc? poder? gerar uma nova senha pelo bot?o "Lembrar Senha" na nossa p?gina inicial de login.<br>';
 				$Html .= '<br>Muito obrigado por se cadastrar e seja muito bem-vindo!<br>';
 				$Html .= '<br>Atenciosamente,<br>Prefeitura de Campinas<br><a href="http://www.campinas.sp.gov.br">www.campinas.sp.gov.br</a><br><br><br>'.email_footer();
 				$Html .= '</html></body>';					  
@@ -146,9 +146,9 @@ if($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['code'])){
 	 //  print_r($user);
  
         /*
-        * Aqui você pode adicionar um código que cadastra o email do usuário no banco de dados
-        * A cada requisição feita em páginas de área restrita você verifica se o email
-        * que está na sessão é um email cadastrado no banco
+        * Aqui voc? pode adicionar um c?digo que cadastra o email do usu?rio no banco de dados
+        * A cada requisi??o feita em p?ginas de ?rea restrita voc? verifica se o email
+        * que est? na sess?o ? um email cadastrado no banco
         */
       }
  
@@ -161,6 +161,6 @@ if($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['code'])){
   }
  
 }else if($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['error'])){
-  $_SESSION['fb_login_error'] = 'Permissão não concedida';
+  $_SESSION['fb_login_error'] = 'Permiss?o n?o concedida';
 }
 ?>
